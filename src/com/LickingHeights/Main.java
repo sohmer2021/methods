@@ -1,11 +1,35 @@
 package com.LickingHeights;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-    printGreeting("World");
+        //printGreeting("World");
+        Scanner keyboard = new Scanner();
+        printHelloWorld();
+
+        System.out.println(printGreeting());
+        keyboard.nextLine();
+    }
+
+    public static String printGreeting(String noun) {
+
+        return "Hello " + noun;
+    }
+
+    public static void printHelloWorld() {
+        System.out.println("Hello World");
+
+    }
 
 
-}public static void printGreeting(String noun){
-        System.out.println("Hello "+noun);
-}}
+    public static void printName(String noun) {
+    }
+}
+
+
+
+
+
+
