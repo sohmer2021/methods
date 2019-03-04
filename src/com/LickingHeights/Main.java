@@ -7,19 +7,17 @@ public class Main {
     public static void main(String[] args) {
         //printGreeting("World");
         Scanner keyboard;
-        printHelloWorld();
-
-        int noun;
-
         keyboard = new Scanner(System.in);
-        System.out.println("What is your name?");
-        noun = keyboard.nextInt();
-        
+        printHelloWorld();
+        printGreeting();
+         multiplyNumbers();
+
 
     }
 
     public static String printGreeting(String noun) {
         return "Hello "+noun;
+
     }
 
     public static void printHelloWorld() {
@@ -27,10 +25,22 @@ public class Main {
 
     }
 
+    public static int multiplyNumbers() {
+        int firstNumber, secondNumber, total;
+        firstNumber = 5;
+        secondNumber = 10;
+        total = 5*10;
+        return total;
 
-    public static void printName(String noun) {
-    }
-}
+
+
+    }}
+
+
+
+
+
+
 
 
 
