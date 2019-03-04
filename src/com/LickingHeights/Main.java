@@ -6,16 +6,20 @@ public class Main {
 
     public static void main(String[] args) {
         //printGreeting("World");
-        Scanner keyboard = new Scanner();
+        Scanner keyboard;
         printHelloWorld();
 
-        System.out.println(printGreeting());
-        keyboard.nextLine();
+        int noun;
+
+        keyboard = new Scanner(System.in);
+        System.out.println("What is your name?");
+        noun = keyboard.nextInt();
+        
+
     }
 
     public static String printGreeting(String noun) {
-
-        return "Hello " + noun;
+        return "Hello "+noun;
     }
 
     public static void printHelloWorld() {
