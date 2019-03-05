@@ -9,6 +9,7 @@ public class Main {
         Scanner keyboard;
         keyboard = new Scanner(System.in);
         printHelloWorld();
+        printGreeting();
          multiplyNumbers();
          divideNumbers();
 
