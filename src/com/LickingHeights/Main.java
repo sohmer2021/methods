@@ -9,10 +9,14 @@ public class Main {
         Scanner keyboard;
         keyboard = new Scanner(System.in);
         printHelloWorld();
-        printGreeting();
          multiplyNumbers();
+         String greeting = printGreeting("ball");
+         System.out.println(greeting);
          divideNumbers();
-
+         System.out.print("Give me two numbers: ");
+         int firstNumber= keyboard.nextInt();
+         int secondNumber = keyboard.nextInt();
+         System.out.println("The max number between " + firstNumber + " and " + secondNumber + " is " + max(firstNumber,secondNumber));
 
     }
 
@@ -21,7 +25,7 @@ public class Main {
 
     }
     public static String printGreeting(String noun) {
-            return "Hello "+noun;
+        return "Hello "+noun;
     }
 
     public static int multiplyNumbers() {
@@ -39,10 +43,33 @@ public class Main {
         total1 = (thirdNumber/fourthNumber);
         return (total1*2);
     }
+    public static int max(int num1, int num2){
+
+        int result;
+        if (num1 > num2) {
+            result = num1;
+
+        }
+            else{
+            result = num2;
+
+        }
+        return  result;
+
+    }
+    public static String flip(String noun){
+    String word1;
+    String word2;
+
+
+
+
+
+        }
 
 }
 
-
+    //Create a method that will switch the order of two words and return it
 
 
 
