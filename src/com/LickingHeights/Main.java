@@ -17,6 +17,10 @@ public class Main {
         int firstNumber = keyboard.nextInt();
         int secondNumber = keyboard.nextInt();
         System.out.println("The max number between " + firstNumber + " and " + secondNumber + " is " + max(firstNumber, secondNumber));
+        System.out.println("Give me two words");
+        String noun1 = keyboard.nextLine();
+        String noun2 = keyboard.next();
+        System.out.println(noun2 + noun1);
 
     }
 
@@ -59,7 +63,14 @@ public class Main {
         return result;
 
     }
-}
+    public static String flipWords(String noun1, String noun2){
+    return noun2+noun1;
+
+}}
+
+
+
+
 
 
 
